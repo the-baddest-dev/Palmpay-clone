@@ -1,0 +1,165 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-family: Poppins, sans-serif;
+}
+
+nav{
+  background-color: #fff;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  /* border: 2px solid red; */
+  height: 50px;
+}
+
+.anchor{
+  /* border: 2px solid green; */
+  margin-right: 50px;
+  color: #18191f;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.anchor:last-child{
+  border: 2px solid #6d46db;
+  color: #fff;
+  background-color: #6d46db;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+select{
+  border: 2px solid #F7F7FB;
+  background-color: #F7F7FB;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+
+.section-width{
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.first-section{
+  background-image: url(./images/first.png);
+  height: 700px;
+}
+
+.flex-parent1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.flex-child1{
+  /* border: 2px solid black; */
+  padding-top: 80px;
+}
+
+.flex-child1:nth-child(1){
+  /* border: 2px solid blue; */
+  width: 50%;
+}
+
+.flex-child1:nth-child(2){
+  /* border: 2px solid black; */
+  width: 50%;
+}
+
+.flex-child1:nth-child(3){
+  position: absolute; 
+  top: 500px;
+  left: 0;
+  border: 2px solid green;
+  width: 1000px;
+}
+
+.flex-child1 span:nth-child(1){
+  /* border: 2px solid black; */
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  /* text-shadow: 2px 2px; */
+  display: block;
+}
+
+.flex-child1 span:nth-child(2){
+  /* border: 2px solid black; */
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  /* text-shadow: 2px 2px; */
+  line-height: 200%;
+  display: block;
+  margin: 40px 0;
+}
+
+.first-row-images{
+  display: inline-block;
+  display: flex;
+  gap: 15px;
+  padding: 30px 0;
+}
+
+.second-row-images{
+  display: flex;
+  gap: 40px;
+}
+
+.column-images{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.column-images span:nth-child(1){
+  /* border: 2px solid blue; */
+  font-size: 9px;
+  line-height: 150%;
+  
+}
+
+.flex-child1 img:nth-child(1){
+  /* border: 2px solid green; */
+  margin-top: -50px;
+}
+
+
+.alone{
+  /* border: 2px solid red; */
+  height: 100px;
+  position: relative;
+  top: -95px;
+
+  background-color: #6F06C0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 540px;
+}
+
+p{
+  /* border: 2px solid yellow; */
+  margin-top:100px;
+}
