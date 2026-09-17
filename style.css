@@ -1,40 +1,56 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-body{
+body {
   font-family: Poppins, sans-serif;
+  padding-top: 70px;
+  height: 4000px;
 }
 
-nav{
+nav {
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.nav-bar{
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 70px;
   /* border: 2px solid red; */
-  height: 50px;
+  height: 70px;
 }
 
-.anchor{
+.anchor-parent{
+  display: flex;
+  gap: 50px;
+}
+
+.anchor1,
+.anchor2,
+.anchor3,
+.anchor4,
+.anchor5{
   /* border: 2px solid green; */
-  margin-right: 50px;
   color: #18191f;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
 }
 
-.anchor:last-child{
+.stand-alone a:nth-child(1) {
   border: 2px solid #6d46db;
   color: #fff;
   background-color: #6d46db;
@@ -42,26 +58,42 @@ nav{
   padding: 8px 20px;
   font-size: 12px;
   font-weight: 500;
+  text-decoration: none;
+  text-wrap: nowrap;
 }
 
-select{
+.nav-child {
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.nav-child img{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+
+select {
   border: 2px solid #F7F7FB;
   background-color: #F7F7FB;
   border-radius: 20px;
-  padding: 5px 25px;
+  padding: 5px 27px;
 }
 
-.section-width{
+.section-width {
   width: 1250px;
   margin: 0 auto;
 }
 
-.first-section{
+.first-section {
   background-image: url(./images/first.png);
   height: 700px;
+   /* padding-top: 70px; */
+   /* margin-top: 70px; */
 }
 
-.flex-parent1{
+.flex-parent1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -72,39 +104,39 @@ select{
   bottom: 0;
 }
 
-.flex-child1{
+.flex-child1 {
   /* border: 2px solid black; */
   padding-top: 80px;
 }
 
-.flex-child1:nth-child(1){
+.flex-child1:nth-child(1) {
   /* border: 2px solid blue; */
   width: 50%;
 }
 
-.flex-child1:nth-child(2){
+.flex-child1:nth-child(2) {
   /* border: 2px solid black; */
   width: 50%;
 }
 
-.flex-child1:nth-child(3){
-  position: absolute; 
+.flex-child1:nth-child(3) {
+  position: absolute;
   top: 500px;
   left: 0;
   border: 2px solid green;
   width: 1000px;
 }
 
-.flex-child1 span:nth-child(1){
+.flex-child1 span:nth-child(1) {
   /* border: 2px solid black; */
   font-size: 60px;
   font-weight: 700;
   color: #fff;
-  /* text-shadow: 2px 2px; */
+  text-shadow: -5px 5px 0 #4a0084;
   display: block;
 }
 
-.flex-child1 span:nth-child(2){
+.flex-child1 span:nth-child(2) {
   /* border: 2px solid black; */
   font-size: 24px;
   font-weight: 200;
@@ -115,51 +147,97 @@ select{
   margin: 40px 0;
 }
 
-.first-row-images{
+.first-row-images {
   display: inline-block;
   display: flex;
   gap: 15px;
   padding: 30px 0;
 }
 
-.second-row-images{
+.second-row-images {
   display: flex;
   gap: 40px;
 }
 
-.column-images{
+.column-images {
   display: flex;
   gap: 20px;
   align-items: center;
-  
+
 }
 
-.column-images span:nth-child(1){
+.column-images span:nth-child(1) {
   /* border: 2px solid blue; */
   font-size: 9px;
   line-height: 150%;
-  
+
 }
 
-.flex-child1 img:nth-child(1){
+.flex-child1 img:nth-child(1) {
   /* border: 2px solid green; */
   margin-top: -50px;
 }
 
 
-.alone{
+.alone {
   /* border: 2px solid red; */
-  height: 100px;
-  position: relative;
-  top: -95px;
-
+  /* height: 100px; */
+  margin-top: -7px;
   background-color: #6F06C0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 540px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
-p{
+
+.second-section {
   /* border: 2px solid yellow; */
-  margin-top:100px;
+  margin-top: 36px;
+  background-image: url(./images/second.png);
 }
+
+.header{
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+.header p:nth-child(1){
+  /* border: 2px solid green; */
+  font-size: 49px;
+  font-weight: 700;
+  color: #490181;
+  text-shadow: -5px 5px 0 #e9e7eb;
+}
+
+.header p:nth-child(2){
+  /* border: 2px solid red; */
+  font-size: 26px;
+  font-weight: 300;
+  color: #8f00ff;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.flex-parent2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-child2:nth-child(1){
+  /* border: 2px solid orangered; */
+  width: 50%;
+}
+
+.flex-
+
+.flex-grand-child1:first-child{
+  border: 2px solid #490181;
+  background-color: #490181;
+}
+
+.flex-child2:nth-child(2){
+  /* border: 2px solid brown; */
+  width: 50%;
+}
+
