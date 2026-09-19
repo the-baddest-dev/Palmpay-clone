@@ -81,6 +81,7 @@ select {
   background-color: #F7F7FB;
   border-radius: 20px;
   padding: 5px 27px;
+  outline: none;
 }
 
 .section-width {
@@ -559,15 +560,244 @@ select {
   padding: 15px 0;
 }
 
-.anna-flex{
+.anna{
   display: flex;
   border: 2px solid #ffff;
   background-color: #ffff;
   color: #000000;
-  /* width: 500px; */
-  align-items: center;
-  /* justify-content: center; */
+  width: 450px;
   margin: 20px 0;
   flex-direction: column;
+  border-radius: 60px;
+  padding: 40px 40px 80px 40px;
+}
+/* Anna first and second direct child */
+.anna-child:nth-child(1),
+.anna-child:nth-child(2){
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+/* Anna second grand child */
+.anna-grand-child p:last-child{
+  /* border: 2px solid green; */
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400
+}
+
+/* Anna third direct child */
+.anna-child:nth-child(3) p{
+  /* border: 2px solid purple; */
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.google-apple{
+  display: flex;
+  gap: 80px;
+}
+
+.google-apple-child:first-child img,
+.google-apple-child:last-child img{
+  /* border: 2px solid red; */
+  width: 160px; 
+  padding-top: 5px; 
+}
+
+/* Download section (eleventh-section) */
+.eleventh-section{
+  background-image: url(./images/second.png);
+}
+
+.download-parent{
+  /* border: 2px solid orangered; */
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.download-child:first-child{
+  /* border: 2px solid green; */
+  /* width: 50%; */
+}
+
+.download-child:first-child img{
+  /* border: 2px solid pink; */
+  width: 450px;
+}
+
+.download-child:last-child{
+  /* border: 2px solid blue */
+  /* width: 50%; */
+}
+
+/* The parargraph text */
+.download-child:last-child p{
+  /* border: 2px solid black; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+  color: #4D0683;
+  
+}
+
+.download-grand-child{
+  /* border: 2px solid brown; */
+  display: flex;
+  gap: 20px;
+}
+
+.download-grand-child-children:first-child img,
+.download-grand-child-children:last-child img{
+  /* border: 2px solid yellow; */
+  width: 180px;
+  margin: 40px 0;
+}
+
+.mini-section{
+  border: 2px solid #3F2385;
+  background-color: #3F2385;
+  background-image: url(./images/lines.png);  
+  margin-top: -7px;
+}
+
+.border-box{
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 35px 0;
+  gap: 80px;
+  align-items: center;
+  /* margin-left: 80px; */
+}
+
+.border-box-children:first-child{
+  /* border: 2px solid green; */
+}
+
+.border-box-children:first-child p{
+  /* border: 2px solid blue; */
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffff;
+}
+
+.fourty-million{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.border-box-children:last-child{
+  /* border: 2px solid green; */
+  display: flex;
+  gap: 20px;
+}
+
+.border-box-children-grandchild:first-child img,
+.border-box-children-grandchild:last-child img{
+  /* border: 2px solid red; */
+  width: 160px;
+}
+
+footer{
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+.footer-parent{
+  /* border: 2px solid red; */
+  display: flex;
+  padding-top: 40px;
+  gap: 150px;
+}
+
+.footer-child:nth-child(1){
+  /* border: 2px solid green; */
+  /* display: flex; */
+}
+
+.footer-child:nth-child(1) img{
+  /* border: 2px solid blue; */
+  width: 160px;
+}
+
+.footer-images img{
+  /* border: 2px solid red; */
+  padding-top: 20px;
+}
+
+.footer-child:nth-child(2){
+  /* border: 2px solid green; */
+}
+
+.footer-child:nth-child(3){
+  /* border: 2px solid red; */
+}
+
+.footer-child:nth-child(4){
+  /* border: 2px solid gray; */
+}
+
+.footer-child:nth-child(5){
+  /* border: 2px solid pink; */
+}
+
+.footer-child:nth-child(2) p,
+.footer-child:nth-child(3) p,
+.footer-child:nth-child(4) p,
+.footer-child:nth-child(5) p{
+  /* border: 2px solid yellow; */
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-links{
+  /* border: 2px solid green; */
+  padding-top: 10px;
+}
+
+.footer-links a{
+  /* border: 2px solid brown; */
+  text-decoration: none;
+  color: #d9dbe1;
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+
+.socials{
+  /* border: 2px solid green; */
+  display: flex;
+  gap: 15px;
+}
+
+.socials-child img{
+  /* border: 2px solid red; */
+  width: 25px;
+  position: relative;
+  left: 1058px;
+  top: 25px;
+}
+
+.copyright{
+  border-bottom: 1px solid #353535;
+}
+
+.copyright-paragraph{
+  color: #D9DBE1;
+  font-size: 14px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-paragraph{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #626262;
+  font-size: 14px;
+}
